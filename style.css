@@ -1,17 +1,26 @@
+* { /* utilizar astericos pra pegar todos os elementos que contem na pagina*/
+
+
+    margin: 0; /* reseto a margem do projeto porq ela ja vem  com um valor padrao*/
+    padding: 0; /* o padding é como se fosse a margem que segura o conteudo do  meu html, da minha pagina, e aqui eu tbm reseto ele */
+
+}
+
+
 body {
 
-    background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
+    height: 100%; /* 100% do VIEW PORT HEIGHT. ou seja, o body vai completar 100% do view independente da tela que se reproduz*/
+    box-sizing: border-box;
+
+    /*background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina
     background-size: cover; /*digo para imagem se redimensionar de acordo ao local que ela faz parte (body, head, etc...)*/
 
     background-color: black;
     color: #f6f6f6;
 }
 
-span {
+.titulo-destaque { /*criei um tag com um tipo de classe especifica pra nao estilizar tags que eu nao queira*/
 
-color: #aec62a;
-
-
-
+    color: yellow;
 
 }
