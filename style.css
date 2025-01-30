@@ -1,0 +1,17 @@
+body {
+
+    background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
+    background-size: cover; /*digo para imagem se redimensionar de acordo ao local que ela faz parte (body, head, etc...)*/
+
+    background-color: black;
+    color: #f6f6f6;
+}
+
+span {
+
+color: #aec62a;
+
+
+
+
+}
