@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+
+
+/*---------------------body/corpo do projeto------------------------------------*/
+
+
 * { /* utilizar astericos pra pegar todos os elementos que contem na pagina*/
 
 
@@ -19,6 +25,14 @@ body {
     color: #f6f6f6;
 }
 
+
+
+
+
+/*-------------------------------------------------------FONTES-------------------------------------------------------------------*/
+
+
+
 .titulo-destaque { /*criei um tag com um tipo de classe especifica pra nao estilizar tags que eu nao queira*/
 
     color: yellow;
@@ -27,7 +41,7 @@ body {
 
 .apresentacao { 
 
-    margin: 10%;
+    margin: 18%;
 
     display: flex; /* isso aqui coloca todo mundo em como se fosse uma linha, dai tem de usar um tipo de row pra organizar*/
 
@@ -39,7 +53,28 @@ body {
 
   }
 
-  /*-----------------------------------------------------------------------------------------------------------------------*/
+  .apresentacao_conteudo{ /* na classe filha da classe pai (apresentacoa) fiz um container do conteudo (frase de descricao)*/
+
+    width: 500px; /* o espaço que a div consome na pagina*/
+
+  }
+
+  .apresentacao_conteudo_titulo{
+
+    font-size: 40px;     /* do tamanho da fonte a ser usada na seção*/
+    font-family: "Smooch Sans", serif;
+
+  }
+
+  .apresentacao_conteudo_descricaoPessoal{
+
+    font-size: 17px;
+    font-family: "Poppins", serif;
+
+
+  }
+
+  /*--------------------------------------------------IMAGENS---------------------------------------------------------------------*/
 
   img {
 
