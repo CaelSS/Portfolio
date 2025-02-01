@@ -19,13 +19,12 @@ body {
     box-sizing: border-box;
 
     background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
+    background-attachment: fixed;
     background-size: cover; /*digo para imagem se redimensionar de acordo ao local que ela faz parte (body, head, etc...)*/
 
     background-color: black;
     color: #f6f6f6;
 }
-
-
 
 
 
@@ -36,6 +35,7 @@ body {
 .titulo-destaque { /*criei um tag com um tipo de classe especifica pra nao estilizar tags que eu nao queira*/
 
     color: yellow;
+
 
 }
 
@@ -48,14 +48,28 @@ body {
     align-items: center; /*deixa alinhado no centro da tela, diferente do justify-contet que deixa alinhado no topo*/
 
     justify-content: space-between; /* aumenta os espaços entre os elementos foto e o container de apresentação.*/
+
     
     
+    
+
+  }
+
+  .apresentacao_conteudo_descricao{
+
+    margin-top: 5%;
+    font-size: 17px;  /* edita o tamanho da letra */
+    font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+
 
   }
 
   .apresentacao_conteudo{ /* na classe filha da classe pai (apresentacoa) fiz um container do conteudo (frase de descricao)*/
 
     width: 500px; /* o espaço que a div consome na pagina*/
+    
 
   }
 
@@ -63,25 +77,46 @@ body {
 
     font-size: 40px;     /* do tamanho da fonte a ser usada na seção*/
     font-family: "Smooch Sans", serif;
+    text-align: justify;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
 
   }
 
-  .apresentacao_conteudo_descricaoPessoal{
+  .apresentacao_links_paragrafo {
 
-    font-size: 17px;
-    font-family: "Poppins", serif;
-
-
+    margin-top: 5%;
+    font-size: 17px;  /* edita o tamanho da letra */
+    font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    
   }
 
   /*--------------------------------------------------IMAGENS---------------------------------------------------------------------*/
 
-  img {
+  .imagem_de_perfil{
+
+    width: 300px; /*diminuir o tamanho da imagem de PERFIL*/
+    max-width: 100%;
+    border-radius: 50px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
+
+  }
 
 
-    width: 300px; /*diminuir o tamanho da imagem*/
-    border-radius: 100px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
+
+  /*------------------------------------------------BOTÕES----------------------------------------------------------------------*/
 
 
+  .apresentacao_botoes a img{
+
+    margin: 15px;
+    padding: 0 15px;
+    gap: 10px;
+    display: block; /* sempre que for usar um elemento flexbox é boa prática utilizar o display flex*/
+    justify-content: space-around;
+    width: 10%;
+    display: inline-block; /* faz com que o link ocupe apenas o tamanho da imagem do icone*/
+    
+    
 
   }
