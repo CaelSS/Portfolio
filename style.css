@@ -115,7 +115,7 @@ body {
     display: block; /* sempre que for usar um elemento flexbox é boa prática utilizar o display flex*/
     justify-content: space-around;
     width: 10%;
-    display: inline-block; /* faz com que o link ocupe apenas o tamanho da imagem do icone*/
+    display: inline-block; /*faz com que o link ocupe apenas o tamanho da imagem do icone*/
     
     
 
