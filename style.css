@@ -18,7 +18,7 @@ body {
     height: auto; /* 100% do VIEW PORT HEIGHT. ou seja, o body vai completar 100% do view independente da tela que se reproduz*/
     box-sizing: border-box;
 
-    background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
+    /*background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
     background-attachment: fixed;
     background-size: cover; /*digo para imagem se redimensionar de acordo ao local que ela faz parte (body, head, etc...)*/
 
@@ -57,11 +57,12 @@ body {
 
   .apresentacao_conteudo_descricao{
 
-    margin-top: 5%;
+    
     font-size: 17px;  /* edita o tamanho da letra */
     font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     text-align: justify;
+    
 
 
   }
@@ -69,6 +70,9 @@ body {
   .apresentacao_conteudo{ /* na classe filha da classe pai (apresentacoa) fiz um container do conteudo (frase de descricao)*/
 
     width: 500px; /* o espaço que a div consome na pagina*/
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     
 
   }
@@ -85,7 +89,7 @@ body {
 
   .apresentacao_links_paragrafo {
 
-    margin-top: 5%;
+
     font-size: 17px;  /* edita o tamanho da letra */
     font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
