@@ -1,7 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
 
+ /*------------------------------------------------------CABECALHO --------------------------------------------------------------------------*/
 
-/*---------------------body/corpo do projeto------------------------------------*/
+ .cabecalho{
+
+  padding:  2% 0% 0% 20%;
+  background-color: aqua;
+
+
+ }
+ 
+ .cabecalho_menu{
+  
+
+
+ }
+
+ .links_do_cabecalho{
+
+
+
+    font-size: 60px;  /* edita o tamanho da letra */
+    font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
+    font-weight: 600;
+    color: #22d4fd; 
+    text-decoration: none;
+    
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+/*------------------------------------------------------body/corpo do projeto------------------------------------------------------------------*/
 
 
 * { /* utilizar astericos pra pegar todos os elementos que contem na pagina*/
@@ -15,7 +53,7 @@
 
 body {
 
-    height: auto; /* 100% do VIEW PORT HEIGHT. ou seja, o body vai completar 100% do view independente da tela que se reproduz*/
+    /* height: auto; 100% do VIEW PORT HEIGHT. ou seja, o body vai completar 100% do view independente da tela que se reproduz */
     box-sizing: border-box;
     
     /*background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
@@ -24,6 +62,7 @@ body {
 
     background-color: black;
     color: #f6f6f6;
+  
 }
 
 
@@ -41,7 +80,7 @@ body {
 
 .apresentacao { 
 
-    margin: 18%;
+    padding: 8% 20%;
 
     display: flex; /* isso aqui coloca todo mundo em como se fosse uma linha, dai tem de usar um tipo de row pra organizar*/
 
@@ -106,10 +145,10 @@ body {
 
   .imagem_de_perfil{
 
-    width: 300px; /*diminuir o tamanho da imagem de PERFIL*/
+    width: 350px; /*diminuir o tamanho da imagem de PERFIL*/
     max-width: 100%;
-    border-radius: 50px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
-    margin-bottom: auto;
+    border-radius: 20px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
+   
 
   }
 
@@ -130,23 +169,22 @@ body {
 
  .botoes_link { /* styles dos botoes*/
 
-  /* background-color: #22d4fd; /* muda a cor de fundo */
+    /* background-color: #22d4fd; /* muda a cor de fundo */
 
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 
-  width: 260px; /*  tamanho do botao*/
-  border-radius: 12px; /* pra arredondar a borda*/
-  gap: 16px;
-  
-  padding: 15px 0; /*primeiro valor vem pro vertical | e o segundo pro horizontal - */
-  text-align: center; /* alinho o texto dentroo do botao para o centro*/
-  font-size: 16px ; 
-  text-decoration: none; /* retira os links dos palavras ancora*/ 
-  font-family: "Poppins", serif;
-  font-weight: 600;
-  color: #f6f6f6;
-  border: 2px outset #22d4fd; /* estilo da borda do botão*/
+    width: 260px; /*  tamanho do botao*/
+    border-radius: 12px; /* pra arredondar a borda*/
+    gap: 16px;
+    
+    padding: 15px 0; /*primeiro valor vem pro vertical | e o segundo pro horizontal - */
+    text-align: center; /* alinho o texto dentroo do botao para o centro*/
+    font-size: 16px ; 
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    color: #f6f6f6;
+    border: 2px outset #22d4fd; /* estilo da borda do botão*/
 
 
 
@@ -155,11 +193,37 @@ body {
 
  .botoes_link:hover{ /* o hover selector serve pra quando vc passar o mouse sobre o botao ou ancora e fazer aquele efeito de preenchiemento e seleção*/
 
-  background-color: rgb(30, 33, 35);
-      -xpedu-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        transform: scale(1.1);
-      cursor: pointer;
+    background-color: rgb(30, 33, 35);  /* altera a cor de fundo ao passar o ponto do mouse*/
+    -ms-transform: scale(1.1); /*aumenta a escala do botao ao passar o mouse*/
+    transform: scale(1.1);
+    cursor: pointer;
+
+      
 
 
+ }
+
+
+
+ /*----------------------------------------------------------RODAPÉ--------------------------------------------------------------*/
+
+
+ .rodape{
+
+
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+    color: #f6f6f6;
+    background-color: #1b1e1f;
+    align-items: center;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+ }
+
+ a{
+
+  text-decoration: none;
  }
