@@ -17,7 +17,7 @@ body {
 
     height: auto; /* 100% do VIEW PORT HEIGHT. ou seja, o body vai completar 100% do view independente da tela que se reproduz*/
     box-sizing: border-box;
-
+    
     /*background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
     background-attachment: fixed;
     background-size: cover; /*digo para imagem se redimensionar de acordo ao local que ela faz parte (body, head, etc...)*/
@@ -55,18 +55,6 @@ body {
 
   }
 
-  .apresentacao_conteudo_descricao{
-
-    
-    font-size: 17px;  /* edita o tamanho da letra */
-    font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-    text-align: justify;
-    
-
-
-  }
-
   .apresentacao_conteudo{ /* na classe filha da classe pai (apresentacoa) fiz um container do conteudo (frase de descricao)*/
 
     width: 500px; /* o espaço que a div consome na pagina*/
@@ -87,12 +75,30 @@ body {
 
   }
 
+  .apresentacao_conteudo_descricao{
+
+    
+    font-size: 17px;  /* edita o tamanho da letra */
+    font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    
+
+
+  }
+
+  
+
+  
+
   .apresentacao_links_paragrafo {
 
 
     font-size: 17px;  /* edita o tamanho da letra */
     font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    
     
   }
 
@@ -103,6 +109,7 @@ body {
     width: 300px; /*diminuir o tamanho da imagem de PERFIL*/
     max-width: 100%;
     border-radius: 50px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
+    margin-bottom: auto;
 
   }
 
@@ -111,16 +118,36 @@ body {
   /*------------------------------------------------BOTÕES----------------------------------------------------------------------*/
 
 
-  .apresentacao_botoes a img{
+  .apresentacao_botoes { /* aqui fica a organizacao da apresentacao dos botoes */
 
-    margin: 15px;
-    padding: 0 15px;
-    gap: 10px;
-    display: block; /* sempre que for usar um elemento flexbox é boa prática utilizar o display flex*/
-    justify-content: space-around;
-    width: 10%;
-    display: inline-block; /*faz com que o link ocupe apenas o tamanho da imagem do icone*/
+    display: flex; /*sempre que criar um container utilizar o display flex pra facilitar a divisao de espacos entre os filhos */
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
     
-    
-
   }
+
+ .botoes_link { /* styles dos botoes*/
+
+  /* background-color: #22d4fd; /* muda a cor de fundo */
+
+  display: flex;
+  justify-content: center;
+
+  width: 260px; /*  tamanho do botao*/
+  border-radius: 12px; /* pra arredondar a borda*/
+  gap: 16px;
+  
+  padding: 15px 0; /*primeiro valor vem pro vertical | e o segundo pro horizontal - */
+  text-align: center; /* alinho o texto dentroo do botao para o centro*/
+  font-size: 16px ; 
+  text-decoration: none; /* retira os links dos palavras ancora*/ 
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  color: #f6f6f6;
+  border: 2px outset #22d4fd; /* estilo da borda do botão*/
+
+
+
+ }
