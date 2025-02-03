@@ -1,34 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 
  /*------------------------------------------------------CABECALHO --------------------------------------------------------------------------*/
 
  .cabecalho{
 
   padding:  2% 0% 0% 20%;
-  background-color: aqua;
 
 
  }
  
  .cabecalho_menu{
+
+  display: flex;
+  gap: 80px;
   
 
 
  }
 
- .links_do_cabecalho{
-
-
-
-    font-size: 60px;  /* edita o tamanho da letra */
-    font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
-    font-weight: 600;
-    color: #22d4fd; 
-    text-decoration: none;
+.links_do_cabecalho{
     
 
+    font-family: "Montserrat", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #22d4fd;
 
 
+ }
+
+ .links_do_cabecalho:hover{ /* estilização do passar do mouse nos links*/
+
+    
+    -ms-transform: scale(1.1); /*aumenta a escala do botao ao passar o mouse*/
+    transform: scale(1.1);
+  
 
 
  }
@@ -80,7 +90,7 @@ body {
 
 .apresentacao { 
 
-    padding: 8% 20%;
+    padding: 4% 20%;
 
     display: flex; /* isso aqui coloca todo mundo em como se fosse uma linha, dai tem de usar um tipo de row pra organizar*/
 
