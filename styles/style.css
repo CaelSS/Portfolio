@@ -150,6 +150,7 @@ body {
     
   }
 
+
   /*--------------------------------------------------IMAGENS---------------------------------------------------------------------*/
 
   .imagem_de_perfil{
@@ -158,6 +159,13 @@ body {
     max-width: 100%;
     border-radius: 20px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
 
+  }
+
+  .imagem_e_legenda{
+    
+    display: flex; /*utilização do flexbox*/
+    align-items: center;   /*centralizo a legenda com a imagem */
+    flex-direction: column; /*alinho o texto e a imagem em uma coluna*/
   }
 
 
