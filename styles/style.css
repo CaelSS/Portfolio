@@ -65,8 +65,7 @@ body {
 
     /* height: auto; 100% do VIEW PORT HEIGHT. ou seja, o body vai completar 100% do view independente da tela que se reproduz */
     box-sizing: border-box;
-    
-    /*background-image: url(img/blackhole.png); /*adiciono a imagem vinda da pagina*/
+  
     background-attachment: fixed;
     background-size: cover; /*digo para imagem se redimensionar de acordo ao local que ela faz parte (body, head, etc...)*/
 
@@ -158,7 +157,6 @@ body {
     width: 350px; /*diminuir o tamanho da imagem de PERFIL*/
     max-width: 100%;
     border-radius: 20px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
-   
 
   }
 
