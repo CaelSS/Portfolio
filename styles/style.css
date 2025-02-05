@@ -4,6 +4,21 @@
 
 
 
+:root{ /* é uma especie de conteudo para variáves globais, pra nao ficar repetindo toda hora as cores*/
+
+  --cor-principal: #000000; 
+  --cor-secundaria: #F6F6F6; 
+  --cor-terciaria: #22d4fd;
+  --cor-hover: rgb(30, 33, 35);
+
+
+
+  --fonte-principal: "Smooch Sans", serif;
+  --fonte-paragrafo: "Poppins", serif;
+
+}
+
+
  /*------------------------------------------------------CABECALHO --------------------------------------------------------------------------*/
 
  .cabecalho{
@@ -28,7 +43,7 @@
     font-family: "Montserrat", serif;
     font-size: 20px;
     font-weight: 600;
-    color: #22d4fd;
+    color: var(--cor-terciaria);
 
 
  }
@@ -42,13 +57,6 @@
 
 
  }
-
-
-
-
-
-
-
 /*------------------------------------------------------body/corpo do projeto------------------------------------------------------------------*/
 
 
@@ -69,8 +77,8 @@ body {
     background-attachment: fixed;
     background-size: cover; /*digo para imagem se redimensionar de acordo ao local que ela faz parte (body, head, etc...)*/
 
-    background-color: black;
-    color: #f6f6f6;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
   
 }
 
@@ -135,6 +143,14 @@ body {
 
   }
 
+  .lista{
+
+    padding-top: 8px;
+
+
+
+  }
+
   
 
   
@@ -166,6 +182,7 @@ body {
     display: flex; /*utilização do flexbox*/
     align-items: center;   /*centralizo a legenda com a imagem */
     flex-direction: column; /*alinho o texto e a imagem em uma coluna*/
+
   }
 
 
@@ -199,8 +216,8 @@ body {
     font-size: 16px ; 
     font-family: "Poppins", serif;
     font-weight: 600;
-    color: #f6f6f6;
-    border: 2px outset #22d4fd; /* estilo da borda do botão*/
+    color: var(--cor-secundaria);
+    border: 2px outset var(--cor-terciaria); /* estilo da borda do botão*/
 
 
 
@@ -230,8 +247,8 @@ body {
     padding: 8px;
     text-align: center;
     font-size: 16px;
-    color: #f6f6f6;
-    background-color: #1b1e1f;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-hover);
     align-items: center;
     margin: auto;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -242,4 +259,5 @@ body {
  a{
 
   text-decoration: none;
+
  }
