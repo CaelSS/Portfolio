@@ -8,13 +8,12 @@
 
   --cor-principal: #000000; 
   --cor-secundaria: #F6F6F6; 
-  --cor-terciaria: #22d4fd;
+  --cor-terciaria: #2C74B3;
   --cor-hover: rgb(30, 33, 35);
 
 
 
   --fonte-principal: "Smooch Sans", serif;
-  --fonte-paragrafo: "Poppins", serif;
 
 }
 
@@ -126,7 +125,7 @@ body {
     font-size: 40px;     /* do tamanho da fonte a ser usada na seção*/
     font-family: "Smooch Sans", serif;
     text-align: justify;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
     
 
   }
