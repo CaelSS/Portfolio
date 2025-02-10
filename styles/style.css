@@ -170,7 +170,7 @@ body {
 
   .imagem_de_perfil{
 
-    width: 35%; /*diminuir o tamanho da imagem de PERFIL*/
+    width: 400px; /*diminuir o tamanho da imagem de PERFIL*/
     border-radius: 20px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
 
   }
@@ -264,7 +264,7 @@ body {
  /*-------------------------------------------------------MEDIA QUERY--------------------------------------------------------*/
  /*---------------------------------------------------para mobile----------------------------------------------------------------------*/
 
- /* @media (max-width: 880px ){
+  @media (max-width: 880px ){
 
 
 
@@ -305,7 +305,7 @@ body {
 
 
 
-    } */
+    } 
 
   
     
