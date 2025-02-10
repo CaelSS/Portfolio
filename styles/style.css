@@ -40,7 +40,7 @@
     
 
     font-family: "Montserrat", serif;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: 600;
     color: var(--cor-terciaria);
 
@@ -97,6 +97,7 @@ body {
 .apresentacao { 
 
     padding: 4% 20%;
+    gap: 82px;
 
     display: flex; /* isso aqui coloca todo mundo em como se fosse uma linha, dai tem de usar um tipo de row pra organizar*/
 
@@ -112,7 +113,7 @@ body {
 
   .apresentacao_conteudo{ /* na classe filha da classe pai (apresentacoa) fiz um container do conteudo (frase de descricao)*/
 
-    width: 500px; /* o espaço que a div consome na pagina*/
+    width: 50%; /* o espaço que a div consome na pagina*/
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -122,7 +123,7 @@ body {
 
   .apresentacao_conteudo_titulo{
 
-    font-size: 40px;     /* do tamanho da fonte a ser usada na seção*/
+    font-size: 2.5rem;     /* do tamanho da fonte a ser usada na seção, porém usa o rem pra ele se adaptadar ao navegador*/
     font-family: "Smooch Sans", serif;
     text-align: justify;
     
@@ -133,9 +134,8 @@ body {
   .apresentacao_conteudo_descricao{
 
     
-    font-size: 17px;  /* edita o tamanho da letra */
+    font-size: 1.0rem;  /* edita o tamanho da letra */
     font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
-    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     text-align: justify;
     
 
@@ -157,7 +157,7 @@ body {
   .apresentacao_links_paragrafo {
 
 
-    font-size: 17px;  /* edita o tamanho da letra */
+    font-size: 1rem;  /* edita o tamanho da letra */
     font-family: "Poppins", serif; /* importo a fonte pelo site da google fonts*/
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     font-weight: 400;
@@ -170,8 +170,7 @@ body {
 
   .imagem_de_perfil{
 
-    width: 350px; /*diminuir o tamanho da imagem de PERFIL*/
-    max-width: 100%;
+    width: 30%; /*diminuir o tamanho da imagem de PERFIL*/
     border-radius: 20px; /* diminui a borda da imagem. Deixa ela mais arredondada*/
 
   }
@@ -206,13 +205,13 @@ body {
     display: flex;
     justify-content: center;
 
-    width: 260px; /*  tamanho do botao*/
+    width: 50%; /*  tamanho do botao*/
     border-radius: 12px; /* pra arredondar a borda*/
     gap: 16px;
     
     padding: 15px 0; /*primeiro valor vem pro vertical | e o segundo pro horizontal - */
     text-align: center; /* alinho o texto dentroo do botao para o centro*/
-    font-size: 16px ; 
+    font-size: 1.0rem ; 
     font-family: "Poppins", serif;
     font-weight: 600;
     color: var(--cor-secundaria);
@@ -245,7 +244,7 @@ body {
 
     padding: 8px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.0rem;
     color: var(--cor-secundaria);
     background-color: var(--cor-hover);
     align-items: center;
@@ -258,5 +257,59 @@ body {
  a{
 
   text-decoration: none;
+
+ }
+
+
+ /*-------------------------------------------------------MEDIA QUERY--------------------------------------------------------*/
+ /*---------------------------------------------------para mobile----------------------------------------------------------------------*/
+
+ @media (max-width: 880px ){
+
+
+
+
+    .cabecalho{
+
+      padding: 8% ;
+
+
+
+    }
+
+    .apresentacao{
+
+      flex-direction: column-reverse;
+      padding: 5%;
+      
+
+    }
+
+    .apresentacao_conteudo{
+
+      width: auto;
+
+    }
+
+    .cabecalho_menu{
+
+      justify-content: center;
+
+
+    }
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
 
  }
